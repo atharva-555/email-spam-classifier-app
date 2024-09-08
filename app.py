@@ -11,6 +11,10 @@ nltk.download('stopwords', quiet=True)
 
 # Initialize the PorterStemmer
 ps = PorterStemmer()
+# Ensure NLTK data is downloaded
+nltk.download('punkt', quiet=True)
+nltk.download('stopwords', quiet=True)
+
 
 def transform_text(text):
     text = text.lower()  # Convert text to lowercase
